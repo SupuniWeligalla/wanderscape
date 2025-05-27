@@ -1,0 +1,269 @@
+<!--Name - Supuni Weligalla 
+Student ID - 10636406 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderScape | Contact Us</title>
+  <!-- External stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- Header Section -->
+    <header>
+      <h1>WanderScape</h1>
+      <!-- Main Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- Dropdown menu for destinations -->
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+              <a href="dubai.html">Dubai</a>
+              <a href="maldives.html">Maldives</a>
+              <a href="singapore.html">Singapore</a>
+            </div>
+          </li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with contact background -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/contact-us1.jpg'); ">
+      <div class="hero-content animate-fade-in">
+        <h2>Contact Us</h2>
+        <p>We're here to help you plan your perfect journey</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Introduction Section -->
+      <section>
+        <h2>Get in Touch</h2>
+        <p>Have questions, suggestions, or need personalized travel advice? Our team of travel experts is ready to assist you. Reach out to us through any of the channels below or fill out the contact form, and we'll get back to you as soon as possible.</p>
+      </section>
+
+      <!-- Contact Methods Section -->
+      <section class="travel-info">
+        <!-- Contact information grid -->
+        <div class="info-grid">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p><a href="mailto:info@wanderscape.com">info@wanderscape.com</a></p>
+            <p>We typically respond within 24 hours</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Call Us</h3>
+            <p>+94 71 735 3547</p>
+            <p>Available Monday-Friday, 9am-6pm EST</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <p>288 Sri Jayawardenepura Mawatha, Sri Jayawardenepura Kotte</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form and Map Section -->
+      <section>
+        <div class="place-content" style="grid-template-columns: 1fr 1fr;">
+          <!-- Contact Form Container -->
+          <div class="contact-form-container">
+            <h3>Send Us a Message</h3>
+            <!-- Main contact form -->
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
+              </div>
+              
+              <!-- Subject dropdown -->
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" class="form-control" required>
+                  <option value="">Select a subject</option>
+                  <option value="booking">Booking Inquiry</option>
+                  <option value="destination">Destination Information</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" class="form-control" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+            </form>
+          </div>
+          
+          <!-- Map Container -->
+          <div class="map-container">
+            <h3>Our Location</h3>
+            <!-- Embedded Google Map -->
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8685087292247!2d79.89956177480946!3d6.906323093093072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259a2d2546477%3A0xe9a48f1df0b346f0!2sECU%20Sri%20Lanka%20Campus!5e0!3m2!1sen!2slk!4v1748020000117!5m2!1sen!2slk" 
+                  width="700"
+                  height="450" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+           </div>
+            <!-- Address and business hours -->
+            <div class="address-details" style="margin-top: 20px;">
+              <p><strong>WanderScape</strong></p>
+              <p>288 Sri Jayawardenepura Mawatha, Sri Jayawardenepura Kotte</p>
+              <p><strong>Business Hours:</strong> Monday-Friday, 9am-6pm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section>
+        <h2>Frequently Asked Questions</h2>
+        <!-- FAQ items container -->
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3>How do I book a trip through WanderScape?</h3>
+            <p>You can book a trip through our website by visiting the "Book Now" page or contacting our team directly for personalized assistance with your travel arrangements.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. For certain destinations, we also offer payment plans to make your dream vacation more accessible.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Can I modify or cancel my booking?</h3>
+            <p>Yes, most bookings can be modified or canceled according to the specific terms and conditions. We recommend reviewing the cancellation policy for your booking or contacting our customer service team for assistance.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Do you provide travel insurance?</h3>
+            <p>While we don't directly sell travel insurance, we strongly recommend purchasing comprehensive travel insurance for your trip. We can suggest reputable providers that offer coverage suitable for your destination and activities.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>How far in advance should I book my trip?</h3>
+            <p>For popular destinations during peak season, we recommend booking at least 6-8 months in advance. For off-season travel or less busy destinations, 3-4 months ahead is typically sufficient to secure good rates and availability.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media and Newsletter Section -->
+      <section class="travel-info">
+        <h2>Connect With Us</h2>
+        <p>Follow us on social media for travel inspiration, tips, and special offers.</p>
+        
+        <!-- Social media icons with colors -->
+        <div class="social-icons" style="justify-content: center; margin: 30px 0;">
+          <a href="https://facebook.com" target="_blank" style="background: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" style="background: #1da1f2;"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" style="background: #c32aa3;"><i class="fab fa-instagram"></i></a>
+          <a href="https://pinterest.com" target="_blank"style="background: #bd081c;"><i class="fab fa-pinterest"></i></a>
+          <a href="https://youtube.com" target="_blank" style="background: #ff0000;"><i class="fab fa-youtube"></i></a>
+          <a href="https://linkedin.com" target="_blank" style="background: #0077b5;"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        
+        <!-- Newsletter signup -->
+        <div class="newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Stay updated with our latest travel tips, destination guides, and exclusive offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <!-- Company info column -->
+        <div class="footer-column">
+          <h3>WanderScape</h3>
+          <p>Your trusted travel companion to explore the world's finest destinations with confidence and ease.</p>
+          <!-- Social media links -->
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com" target="_blank"> <i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"> <i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick links column -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="travel-tips.html">Travel Tips</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Destinations column -->
+        <div class="footer-column">
+          <h3>Destinations</h3>
+          <ul>
+            <li><a href="dubai.html">Dubai</a></li>
+            <li><a href="maldives.html">Maldives</a></li>
+            <li><a href="singapore.html">Singapore</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact info column -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@wanderscape.com">info@wanderscape.com</a></li>
+            <li><i class="fas fa-phone"></i> +94 71 735 3547</li>
+            <li><i class="fas fa-map-marker-alt"></i> 288 Sri Jayawardenepura Mawatha, Sri Jayawardenepura Kotte</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Copyright section -->
+      <div class="copyright">
+        <p>&copy; 2025 WanderScape. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

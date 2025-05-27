@@ -1,0 +1,496 @@
+<!--Name - Supuni Weligalla 
+Student ID - 10636406 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderScape | Book Now</title>
+  <!-- External stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- Header Section -->
+    <header>
+      <h1>WanderScape</h1>
+      <!-- Main Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- Dropdown menu for destinations -->
+          <li class="dropdown">
+            <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+              <a href="dubai.html">Dubai</a>
+              <a href="maldives.html">Maldives</a>
+              <a href="singapore.html">Singapore</a>
+            </div>
+          </li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li>Book Now</li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with booking background -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/booking.jpg');">
+      <div class="hero-content animate-fade-in">
+        <h2>Book Your Dream Vacation</h2>
+        <p>Let us help you create the perfect travel experience tailored to your preferences</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Introduction Section -->
+      <section>
+        <h2>Start Your Journey</h2>
+        <p>Fill out the booking form below to begin planning your personalized travel experience. Our travel experts will review your preferences and contact you with a customized itinerary and quote.</p>
+      </section>
+
+      <!-- Main Booking Form Section -->
+      <section>
+        <div class="booking-form">
+          <!-- Comprehensive booking form -->
+          <form id="bookingForm">
+            <!-- Personal Information Section -->
+            <h3>Personal Information</h3>
+            <!-- Name fields row -->
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Contact details row -->
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Trip Details Section -->
+            <h3>Trip Details</h3>
+            <!-- Destination selection row -->
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="destination">Destination *</label>
+                  <select id="destination" name="destination" class="form-control" required>
+                    <option value="">Select a destination</option>
+                    <option value="dubai">Dubai, UAE</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="multiple">Multiple Destinations</option>
+                    <option value="other">Other (Please specify)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="otherDestination">If Other, Please Specify</label>
+                  <input type="text" id="otherDestination" name="otherDestination" class="form-control">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Travel dates row -->
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="departureDate">Departure Date *</label>
+                  <input type="date" id="departureDate" name="departureDate" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="returnDate">Return Date *</label>
+                  <input type="date" id="returnDate" name="returnDate" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Traveler count row -->
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="adults">Number of Adults *</label>
+                  <select id="adults" name="adults" class="form-control" required>
+                    <option value="">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6+">6+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="children">Number of Children (0-17)</label>
+                  <select id="children" name="children" class="form-control">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Preferences Section -->
+            <h3>Preferences</h3>
+            <!-- Accommodation preferences row -->
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="accommodation">Accommodation Type *</label>
+                  <select id="accommodation" name="accommodation" class="form-control" required>
+                    <option value="">Select accommodation type</option>
+                    <option value="luxury">Luxury Resort/Hotel</option>
+                    <option value="mid-range">Mid-Range Hotel</option>
+                    <option value="budget">Budget-Friendly Hotel</option>
+                    <option value="villa">Private Villa</option>
+                    <option value="apartment">Serviced Apartment</option>
+                    <option value="varied">Mix of Accommodation Types</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label for="roomType">Room Type *</label>
+                  <select id="roomType" name="roomType" class="form-control" required>
+                    <option value="">Select room type</option>
+                    <option value="standard">Standard Room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="overwater">Overwater Villa (Maldives)</option>
+                    <option value="beach">Beach Villa</option>
+                    <option value="family">Family Room</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Interests checkbox grid -->
+            <div class="form-group">
+              <label>Interests (Select all that apply)</label>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+                <div>
+                  <input type="checkbox" id="beaches" name="interests" value="beaches">
+                  <label for="beaches">Beaches & Water Activities</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="culture" name="interests" value="culture">
+                  <label for="culture">Cultural Experiences</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="adventure" name="interests" value="adventure">
+                  <label for="adventure">Adventure & Outdoor</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="food" name="interests" value="food">
+                  <label for="food">Culinary Experiences</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="shopping" name="interests" value="shopping">
+                  <label for="shopping">Shopping</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="luxury" name="interests" value="luxury">
+                  <label for="luxury">Luxury Experiences</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="wellness" name="interests" value="wellness">
+                  <label for="wellness">Wellness & Spa</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="family" name="interests" value="family">
+                  <label for="family">Family-Friendly Activities</label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Budget selection -->
+            <div class="form-group">
+              <label for="budget">Approximate Budget per Person (USD) *</label>
+              <select id="budget" name="budget" class="form-control" required>
+                <option value="">Select budget range</option>
+                <option value="under1000">Under $1,000</option>
+                <option value="1000-2000">$1,000 - $2,000</option>
+                <option value="2000-3000">$2,000 - $3,000</option>
+                <option value="3000-5000">$3,000 - $5,000</option>
+                <option value="5000-10000">$5,000 - $10,000</option>
+                <option value="over10000">Over $10,000</option>
+              </select>
+            </div>
+            
+            <!-- Special requests textarea -->
+            <div class="form-group">
+              <label for="specialRequests">Special Requests or Additional Information</label>
+              <textarea id="specialRequests" name="specialRequests" class="form-control" rows="5" placeholder="Tell us about any special requests, dietary restrictions, mobility concerns, special occasions, or any other details that would help us customize your trip."></textarea>
+            </div>
+            
+            <!-- Marketing source dropdown -->
+            <div class="form-group">
+              <label for="hearAbout">How did you hear about us?</label>
+              <select id="hearAbout" name="hearAbout" class="form-control">
+                <option value="">Select an option</option>
+                <option value="search">Search Engine</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend/Family Referral</option>
+                <option value="blog">Travel Blog/Website</option>
+                <option value="magazine">Travel Magazine</option>
+                <option value="previous">Previous Customer</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <!-- Newsletter subscription checkbox -->
+            <div class="form-group">
+              <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+              <label for="newsletter">Sign up for our newsletter to receive travel inspiration and exclusive offers</label>
+            </div>
+            
+            <!-- Terms and conditions checkbox -->
+            <div class="form-group">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a> *</label>
+            </div>
+            
+            <!-- Submit button -->
+            <div class="form-group">
+              <button type="submit" class="btn">Submit Booking Request</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Booking Process Information Section -->
+      <section class="travel-info">
+        <h2>Booking Information</h2>
+        
+        <!-- Booking details grid -->
+        <div class="info-grid">
+          <div class="info-item">
+            <i class="fas fa-clipboard-check"></i>
+            <h3>Booking Process</h3>
+            <p>After submitting your request, our travel experts will review your preferences and contact you within 24-48 hours with a personalized itinerary and quote.</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-credit-card"></i>
+            <h3>Payment</h3>
+            <p>We accept all major credit cards, bank transfers, and PayPal. A 20% deposit is required to confirm your booking, with the balance due 30 days before departure.</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>Cancellation Policy</h3>
+            <p>Cancellations made 60+ days before departure receive a full refund minus a $100 processing fee. Please refer to our detailed policy for cancellations within 60 days.</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Travel Insurance</h3>
+            <p>We strongly recommend purchasing comprehensive travel insurance to protect your investment and provide peace of mind during your journey.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pre-designed Packages Section -->
+      <section>
+        <h2>Popular Travel Packages</h2>
+        <p>Browse our most popular pre-designed packages for inspiration. Our travel experts can customize any of these itineraries to match your preferences.</p>
+        
+        <!-- Package cards with JavaScript interaction -->
+        <div class="featured-destinations">
+          <div class="destination-card">
+            <div class="destination-img">
+              <img src="image/Dubai-Luxury-Escape.jpg" alt="Dubai Luxury Escape">
+            </div>
+            <div class="destination-info">
+              <h3>Dubai Luxury Escape</h3>
+              <p><strong>7 Days | From $2,499 per person</strong></p>
+              <p>Experience the opulence of Dubai with 5-star accommodations, private desert safari, exclusive yacht cruise, and VIP shopping experience.</p>
+              <!-- Button with onclick JavaScript to pre-fill form -->
+              <a href="#" class="btn" onclick="document.getElementById('destination').value='dubai'; document.getElementById('destination').scrollIntoView({ behavior: 'smooth' }); return false;">Book This Package</a>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="destination-img">
+              <img src="image/Maldives-Paradise-Retreat.jpg" alt="Maldives Paradise Retreat">
+            </div>
+            <div class="destination-info">
+              <h3>Maldives Paradise Retreat</h3>
+              <p><strong>6 Days | From $3,299 per person</strong></p>
+              <p>Indulge in overwater villa luxury, couples spa treatments, private sunset cruise, and guided snorkeling excursions in the crystal-clear waters.</p>
+              <!-- Button with onclick JavaScript to pre-fill form -->
+              <a href="#" class="btn" onclick="document.getElementById('destination').value='maldives'; document.getElementById('destination').scrollIntoView({ behavior: 'smooth' }); return false;">Book This Package</a>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="destination-img">
+              <img src="image/Singapore-Discovery.jpg" alt="Singapore Discovery">
+            </div>
+            <div class="destination-info">
+              <h3>Singapore Discovery</h3>
+              <p><strong>5 Days | From $1,899 per person</strong></p>
+              <p>Explore the best of Singapore with premium hotel stay, skip-the-line attraction passes, guided food tour, and Gardens by the Bay night show.</p>
+              <!-- Button with onclick JavaScript to pre-fill form -->
+              <a href="#" class="btn" onclick="document.getElementById('destination').value='singapore'; document.getElementById('destination').scrollIntoView({ behavior: 'smooth' }); return false;">Book This Package</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section>
+        <h2>Frequently Asked Questions</h2>
+        
+        <!-- Booking-related FAQs -->
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3>How far in advance should I book my trip?</h3>
+            <p>For popular destinations during peak seasons (December-January, summer months), we recommend booking at least 6-8 months in advance to secure the best accommodations and experiences. For off-season travel, 3-4 months ahead is typically sufficient.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Are flights included in your packages?</h3>
+            <p>Our standard packages do not include international flights, allowing flexibility for travelers from different departure locations. However, we can arrange flights at your request. Domestic flights within multi-destination packages are typically included.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Can you accommodate special dietary requirements?</h3>
+            <p>Yes, we work closely with hotels and restaurants to accommodate dietary restrictions and preferences. Please note your requirements in the "Special Requests" section of the booking form, and we'll ensure they're communicated to all relevant providers.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>Do I need a visa for these destinations?</h3>
+            <p>Visa requirements depend on your nationality. UAE (Dubai) offers visa on arrival for many nationalities. Maldives provides a 30-day tourist visa on arrival for all nationalities. Singapore has visa-free arrangements with many countries. We'll provide detailed visa information specific to your nationality after booking.</p>
+          </div>
+          
+          <div class="faq-item">
+            <h3>What's your approach to sustainable tourism?</h3>
+            <p>We're committed to sustainable tourism practices, partnering with eco-conscious accommodations, supporting local communities, and minimizing environmental impact. We offer options for carbon offsetting and can suggest eco-friendly activities and accommodations upon request.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Reviews Section -->
+      <section class="testimonials">
+        <h2>Happy Travelers</h2>
+        <!-- Booking-related testimonials -->
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"The booking process was incredibly smooth, and the personalized itinerary WanderScape created exceeded all our expectations. Every detail was perfectly arranged, from the stunning accommodations to the thoughtfully planned activities."</p>
+            <p class="testimonial-author">- Thomas & Rebecca Wilson, Honeymoon in Maldives</p>
+          </div>
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">"As a solo traveler, I appreciated the attention to detail and safety considerations in my Singapore itinerary. The team was responsive to all my questions and made adjustments based on my preferences. A truly customized experience!"</p>
+            <p class="testimonial-author">- Jennifer Chang, Singapore Explorer</p>
+          </div>
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Our family trip to Dubai was flawless thanks to WanderScape's expert planning. The mixture of luxury experiences and family-friendly activities kept everyone from grandparents to kids thoroughly entertained. Will definitely book with them again!"</p>
+            <p class="testimonial-author">- The Martinez Family, Dubai Adventure</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Call to Action Section -->
+      <section class="newsletter">
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>Book your dream vacation today and let us handle all the details for a seamless, unforgettable travel experience.</p>
+        <!-- JavaScript scroll to form button -->
+        <a href="#bookingForm" class="btn" onclick="document.getElementById('bookingForm').scrollIntoView({ behavior: 'smooth' }); return false;">Start Planning Now</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <!-- Company info column -->
+        <div class="footer-column">
+          <h3>WanderScape</h3>
+          <p>Your trusted travel companion to explore the world's finest destinations with confidence and ease.</p>
+          <!-- Social media links -->
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com" target="_blank"> <i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"> <i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick links column -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="travel-tips.html">Travel Tips</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Destinations column -->
+        <div class="footer-column">
+          <h3>Destinations</h3>
+          <ul>
+            <li><a href="dubai.html">Dubai</a></li>
+            <li><a href="maldives.html">Maldives</a></li>
+            <li><a href="singapore.html">Singapore</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact info column -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@wanderscape.com">info@wanderscape.com</a></li>
+            <li><i class="fas fa-phone"></i> +94 71 735 3547</li>
+            <li><i class="fas fa-map-marker-alt"></i> 288 Sri Jayawardenepura Mawatha, Sri Jayawardenepura Kotte</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Copyright section -->
+      <div class="copyright">
+        <p>&copy; 2025 WanderScape. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
